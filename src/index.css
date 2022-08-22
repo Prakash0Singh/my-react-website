@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+.navbar{
+  font-family: 'Playfair Display', serif;
+}
+.navbar a:hover{
+  color: #3498db !important;
+}
+
+.menu_active{
+  font-size: bold;
+  border-bottom: 4px solid rgb(106, 106, 253);
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#header{
+  width: 100%;
+  height: 80vh;
+  margin-top: 70px;
+}
+
+#header h1{
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 70px;
+  color: black;
+}
+
+#header h2{
+  color: #484848;
+  font-size: 24px;
+}
+#header .brand-name{
+  color: #3498db;
+}
+#header .btn-get-started{
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  display: inline-block;
+  border-radius: 50px;
+  padding: 10px 30px;
+  transition: 0.5s;
+  color: #3498db;
+  border: 2px solid #3498db;
+  text-decoration: none;
+}
+
+#header .btn-get-started:hover{
+  background-color: #3498db;
+  color: white;
+}
+.header-img{
+  text-align: right;
+}
+#header .animated{
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+@-webkit-keyframes up-down{
+  0%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(-10px);
+  }
+}
+@keyframes up-down{
+  0%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(-10px);
+  }
+}
+.container-fluid-footer{
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: center;
+}
+/* responsive */
+@media (max-width:991px) {
+  #header{
+    height: 80vh;
+    
+  }
+  #header .header-img{
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  #header .header-img img{
+    width: 60%;
+  }
+}
+@media (max-width:768px) {
+  #header{
+    margin-top: 20px;
+  }
+  #header h1{
+    font-size: 28px;
+  }
+  #header h2{
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  #header .header-img img{
+    width: 70%;
+  }
+}
