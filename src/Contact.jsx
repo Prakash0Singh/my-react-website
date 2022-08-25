@@ -24,7 +24,7 @@ function Contact() {
     const {fullName,phone,email,message}=data;
     if (fullName && phone && email && message) {
       
-      const response= await fetch("https://project-1-5a517-default-rtdb.firebaseio.com/reactform.json",
+      const response= await fetch("https://react-js-a3ddc-default-rtdb.firebaseio.com/reactform.json",
    {method: "POST",
    headers:{
     "Content-Type":"application/json",
